@@ -1,0 +1,40 @@
+.menu-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-row-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play-game {
+    margin-left: 50%;
+    margin-right: 5%;
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    width: 350px;
+    font-size: 26px !important;
+}
+
+.btn-learn {
+    margin-left: 5%;
+    background-color: antiquewhite;
+    padding: 20px;
+    cursor: pointer;
+    width: 350px;
+    font-size: 26px !important;
+}
+
+.menu-btn-container {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+

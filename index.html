@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu page</title>
+    <link rel="stylesheet" type="text/css" href="styles/menuStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+    <script src="libraries/jquery-3.2.1.min.js"></script>
+    <script src="script/menuScript.js"></script>
+</head>
+<body>
+
+<div class="menu-container">
+    <div class="menu-row-container">
+        <div id="play-btn">
+            <img src="resources/images/btn-play.ico" />
+        </div>
+    </div>
+    <div class="menu-row-container menu-btn-container">
+        <div class="btn-learn btn btn-warning btn-lg">
+            Invata ceva nou (insecte)
+        </div>
+
+        <div class="btn-play-game btn btn-info btn-lg">
+            Joaca un joculet
+        </div>
+    </div>
+</div>
+
+<audio controls class="hide audio" id="learn-audio">
+    <source src="resources/sounds/andreea-hai-sa-invatam-entuziasmat.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio controls class="hide audio" id="play-audio">
+    <source src="resources/sounds/andreea-hai-sa-ne-jucam.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio controls class="hide audio" id="introduction-audio">
+    <source src="resources/sounds/andreea-introducere2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>

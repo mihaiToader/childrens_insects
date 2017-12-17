@@ -1,0 +1,10 @@
+body {
+    /* Center and scale the image nicely */
+    background: url("../resources/images/insect-background1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    overflow: hidden;
+}
