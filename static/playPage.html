@@ -10,10 +10,26 @@
     <script src="../script/script.js"></script>
 </head>
 <body>
+<div id="main-container">
+    <div id="repeat-container">
+        <img id="repeat-image" src="../resources/images/listen.png" onclick="repeatQuestion()">
+    </div>
+    <div id="options-container">
+        <!--ladybug-->
+        <img onclick="wrong.play()" id="first-option" class="options-image" src="../resources/images/ant.jpg"/>
 
-<div class="back-btn">
-    <img src="../resources/images/back-btn.png" class="back-btn-image">
+        <img onclick="wrong.play()" id="second-option" class="options-image" src="../resources/images/cricket.jpg"/>
+
+        <img onclick="handleCorrectAnswer()" id="third-option" class="options-image"
+             src="../resources/images/ladybug.png"/>
+
+        <img onclick="wrong.play()" id="fourth-option" class="options-image" src="../resources/images/bee.png"/>
+
+    </div>
+
+    <div class="back-btn">
+        <img src="../resources/images/back-btn.png" class="back-btn-image">
+    </div>
 </div>
-
 </body>
 </html>

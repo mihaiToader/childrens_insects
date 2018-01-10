@@ -1,10 +1,50 @@
 body {
     /* Center and scale the image nicely */
-    background: url("../resources/images/insect-background1.jpg") no-repeat center center fixed;
+    background: url("../resources/images/ground.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
     overflow: hidden;
+    margin: 0;
+    height: -webkit-fill-available;
 }
+
+#main-container {
+    margin: 0;
+    height: -webkit-fill-available;
+}
+
+#repeat-container {
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#repeat-image {
+    height: 60%;
+    margin: 3%;
+}
+
+#repeat-image:hover{
+    height: 90%;
+}
+
+#options-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-image {
+    height: 30%;
+    margin: 60px;
+}
+
+.options-image:hover {
+    height: 50%;
+}
+
