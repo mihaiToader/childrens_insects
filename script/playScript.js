@@ -36,7 +36,7 @@ var game = {
             onClick: wrongAnswer
         },
         4: {
-            src: 'mosquito.jpg',
+            src: 'mosquito.png',
             onClick: wrongAnswer
         }
     },
@@ -47,11 +47,11 @@ var game = {
             onClick: wrongAnswer
         },
         2: {
-            src: 'cricket.jpg',
+            src: 'cricket.png',
             onClick: correctAnswer,
         },
         3: {
-            src: 'ant.jpg',
+            src: 'ant.png',
             onClick: wrongAnswer
         },
         4: {
@@ -62,7 +62,7 @@ var game = {
     4: {
         question: 'albina-ghicitoare.mp3',
         1: {
-            src: 'mosquito.jpg',
+            src: 'mosquito.png',
             onClick: wrongAnswer
         },
         2: {
@@ -74,18 +74,18 @@ var game = {
             onClick: correctAnswer,
         },
         4: {
-            src: 'cricket.jpg',
+            src: 'cricket.png',
             onClick: wrongAnswer
         }
     },
     5: {
         question: 'tantar-ghicitoare.mp3',
         1: {
-            src: 'ant.jpg',
+            src: 'ant.png',
             onClick: wrongAnswer
         },
         2: {
-            src: 'cricket.jpg',
+            src: 'cricket.png',
             onClick: wrongAnswer
         },
         3: {
@@ -93,7 +93,7 @@ var game = {
             onClick: wrongAnswer
         },
         4: {
-            src: 'mosquito.jpg',
+            src: 'mosquito.png',
             onClick: correctAnswer,
         }
     },
@@ -108,7 +108,7 @@ var game = {
             onClick: wrongAnswer
         },
         3: {
-            src: 'ant.jpg',
+            src: 'ant.png',
             onClick: correctAnswer,
         },
         4: {
@@ -127,7 +127,7 @@ var game = {
             onClick: wrongAnswer
         },
         3: {
-            src: 'cricket.jpg',
+            src: 'cricket.png',
             onClick: wrongAnswer
         },
         4: {
