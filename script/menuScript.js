@@ -1,10 +1,11 @@
 $(document).ready(() => {
     let $btnLearn = $('.btn-learn');
     let $btnPlay = $('.btn-play-game');
-    let $btnCantecele = $(".btn-cantecele");
+    let $canteceleAudio = $("#cantecele-audio");
     let $learnAudio = $("#learn-audio");
     let $playAudio = $("#play-audio");
     let $ambianceAudio = $("#ambiance-audio");
+    let $btnCantecele = $(".btn-cantecele");
 
     $btnLearn.click(() => {
         window.location.href = 'static/learningPage.html';
@@ -26,6 +27,7 @@ $(document).ready(() => {
             $learnAudio.trigger('pause');
             $learnAudio.prop("currentTime",0);
         });
+
     $btnPlay.hover(
         () => {
             $playAudio.trigger('play');
@@ -33,6 +35,15 @@ $(document).ready(() => {
         () => {
             $playAudio.trigger('pause');
             $playAudio.prop("currentTime",0);
+        });
+
+    $btnCantecele.hover(
+        () => {
+            $canteceleAudio.trigger('play');
+        },
+        () => {
+            $canteceleAudio.trigger('pause');
+            $canteceleAudio.prop("currentTime",0);
         });
 
     $("#play-btn").click(() => {
