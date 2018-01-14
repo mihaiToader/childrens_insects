@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu page</title>
+    <title>Lumea insectelor</title>
     <link rel="stylesheet" type="text/css" href="styles/menuStyle.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
@@ -12,18 +12,23 @@
 <body>
 
 <div class="menu-container">
-    <div class="menu-row-container">
+    <div class="menu-row-container menu-row-container-bird">
         <div id="play-btn">
-            <img src="resources/images/btn-play.ico" />
+            <img src="resources/images/Large_Blue_Bird.png" class="blue_bird"/>
         </div>
     </div>
     <div class="menu-row-container menu-btn-container">
-        <div class="btn-learn btn btn-warning btn-lg">
-            Invata ceva nou
+        <div class="btn-learn btn btn-primary btn-lg">
+            Hai sa invatam
         </div>
 
-        <div class="btn-play-game btn btn-info btn-lg">
-            Joaca un joculet
+        <div class="btn-play-game btn btn-danger btn-lg">
+            Hai sa ne jucam
+        </div>
+    </div>
+    <div class="menu-row-container menu-btn-container-bottom">
+        <div class="btn-cantecele btn btn-warning btn-lg">
+            Cantecele
         </div>
     </div>
 </div>
@@ -40,6 +45,11 @@
 
 <audio controls class="hide audio" id="introduction-audio">
     <source src="resources/sounds/andreea-introducere2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio controls class="hide audio" id="ambiance-audio">
+    <source src="resources/sounds/Crickets%20Nature%20Sound%20-%20Full%2060%20Minute%20Ambient%20Soundtrack.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 

@@ -25,6 +25,10 @@ body {
     align-items: center;
 }
 
+.menu-row-container-bird {
+    min-height: 350px;
+}
+
 .btn-play-game {
     margin-left: 50%;
     margin-right: 5%;
@@ -44,8 +48,27 @@ body {
     font-size: 26px !important;
 }
 
-.menu-btn-container {
-    margin-top: 10%;
-    margin-bottom: 5%;
+.btn-cantecele {
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    width: 350px;
+    font-size: 26px !important;
 }
 
+
+.menu-btn-container {
+    margin-top: 10%;
+}
+
+.menu-btn-container-bottom {
+    margin-top: 5%;
+}
+
+.blue_bird {
+    height: 300px;
+}
+
+.blue_bird:hover{
+    height: 350px;
+}

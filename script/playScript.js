@@ -1,23 +1,23 @@
 const soundsPath = '../resources/sounds/';
-var insect = new Audio();
+let insect = new Audio();
 insect.src = soundsPath + 'buburuza-ghicitoare.mp3';
-var duration = insect.duration;
+let duration = insect.duration;
 setTimeout("insect.play()", 1000);
 
-var wrong = new Audio();
+let wrong = new Audio();
 wrong.src = '../resources/sounds/tryagain.mp3';
 
-var correct = new Audio();
+let correct = new Audio();
 correct.src = '../resources/sounds/correctAnswer.mp3';
 
-var pageIndex = 2;
+let pageIndex = 2;
 const imagesPath = '../resources/images/';
 const wrongAnswer = 'wrong.play()';
 const correctAnswer = 'handleCorrectAnswer()';
 const finish = 'location.href=\'finish.html\'';
 
 
-var game = {
+let game = {
     1: {
         question: 'buburuza-ghicitoare.mp3'
     },
@@ -145,7 +145,7 @@ function playQuestion() {
     setTimeout("insect.play()", 1000);
 }
 
-var firstOption, secondOption, thirdOption, fourthOption;
+let firstOption, secondOption, thirdOption, fourthOption;
 
 function enable() {
     firstOption.setAttribute("onclick", game[pageIndex][1].onClick);

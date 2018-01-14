@@ -1,0 +1,31 @@
+.song {
+    justify-content: center;
+    min-height: 460px;
+    display: none;
+}
+
+.song-video {
+    max-width: 800px;
+    flex: 1;
+}
+
+.repeat-container {
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.repeat-image {
+    height: 60%;
+    margin: 3%;
+}
+
+.repeat-image:hover{
+    height: 90%;
+}
+
+#bird-back {
+    display: none;
+    cursor: pointer;
+}
