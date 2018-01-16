@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <title>Menu page</title>
     <link rel="stylesheet" type="text/css" href="../styles/menuStyle.css">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../libraries/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
     <script src="../libraries/jquery-3.2.1.min.js"></script>
     <script src="../script/menuScript.js"></script>
+    <script src="../script/script.js"></script>
 </head>
 <body>
-<div class="menu-container" style="color: white">
-    <embed src="../resources/sounds/kids.mp3" autostart="true" loop width="0" height="0" ></embed>
-    Felicitari!!
+<div class="menu-container" style="color: white; flex-direction: row">
+    <embed src="../resources/sounds/kids.mp3" autostart="true" loop width="0" height="0"></embed>
+    <div style="width: 30%; height: 100%">
+        <img src="../resources/images/fireworks.gif"/>
+        <img style="position: absolute; left: 2%; top: 40%;}" src="../resources/images/fireworks2.gif"/>
+    </div>
+    <div style="width: 30%; height: 100%">
+        <div style="width:100%; height:50%; display: flex; align-items: center;justify-content: center">
+            <img onmouseover="repeatGame.play()" style="width: 35%; height: 60%" onclick="location.href='playPage.html'"
+                 src="../resources/images/replay.ico"/>
+        </div>
+
+        <div style="width:100%;height:50%; display: flex; align-items: center;justify-content: center">
+            <img class="back-btn" style="width: 32%; height: 55%" src="../resources/images/back-btn.png"
+                 class="back-btn-image">
+        </div>
+    </div>
+    <div style="width: 40%; height: 100%; display: flex;">
+        <img src="../resources/images/fireworks3.gif"/>
+    </div>
 </div>
 </body>
 </html>

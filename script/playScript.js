@@ -1,23 +1,29 @@
 const soundsPath = '../resources/sounds/';
-let insect = new Audio();
+var insect = new Audio();
 insect.src = soundsPath + 'buburuza-ghicitoare.mp3';
-let duration = insect.duration;
+var duration = insect.duration;
 setTimeout("insect.play()", 1000);
 
-let wrong = new Audio();
+const wrong = new Audio();
 wrong.src = '../resources/sounds/tryagain.mp3';
 
-let correct = new Audio();
+const correct = new Audio();
 correct.src = '../resources/sounds/correctAnswer.mp3';
 
-let pageIndex = 2;
+const repeat = new Audio();
+repeat.src = '../resources/sounds/andreea-repetare-ghicitoare.mp3';
+
+const back = new Audio();
+back.src = '../resources/sounds/inapoi.mp3';
+
+var pageIndex = 2;
 const imagesPath = '../resources/images/';
 const wrongAnswer = 'wrong.play()';
 const correctAnswer = 'handleCorrectAnswer()';
 const finish = 'location.href=\'finish.html\'';
 
 
-let game = {
+const game = {
     1: {
         question: 'buburuza-ghicitoare.mp3'
     },
@@ -25,11 +31,11 @@ let game = {
         question: 'fluture-ghicitoare.mp3',
         1: {
             src: 'butterfly.png',
-            onClick: correctAnswer,
+            onClick: correctAnswer
         },
         2: {
             src: 'fly.png',
-            onClick: wrongAnswer,
+            onClick: wrongAnswer
         },
         3: {
             src: 'bee.png',
@@ -48,7 +54,7 @@ let game = {
         },
         2: {
             src: 'cricket.png',
-            onClick: correctAnswer,
+            onClick: correctAnswer
         },
         3: {
             src: 'ant.png',
@@ -71,7 +77,7 @@ let game = {
         },
         3: {
             src: 'bee.png',
-            onClick: correctAnswer,
+            onClick: correctAnswer
         },
         4: {
             src: 'cricket.png',
@@ -109,7 +115,7 @@ let game = {
         },
         3: {
             src: 'ant.png',
-            onClick: correctAnswer,
+            onClick: correctAnswer
         },
         4: {
             src: 'ladybug.png',
@@ -120,7 +126,7 @@ let game = {
         question: 'musca-ghicitoare.mp3',
         1: {
             src: 'fly.png',
-            onClick: finish,
+            onClick: finish
         },
         2: {
             src: 'bee.png',
@@ -145,7 +151,7 @@ function playQuestion() {
     setTimeout("insect.play()", 1000);
 }
 
-let firstOption, secondOption, thirdOption, fourthOption;
+var firstOption, secondOption, thirdOption, fourthOption;
 
 function enable() {
     firstOption.setAttribute("onclick", game[pageIndex][1].onClick);
@@ -182,6 +188,9 @@ function nextPage() {
 }
 
 function repeatQuestion() {
+    repeat.pause();
+    repeat.currentTime = 0;
+
     insect.pause();
     insect.currentTime = 0;
     insect.src = soundsPath + game[pageIndex - 1].question;

@@ -1,4 +1,6 @@
 const backSoundsPath = '../resources/sounds/inapoi.mp3';
+const repeatGame = new Audio();
+repeatGame.src = '../resources/sounds/repeat-game.mp3';
 
 $(document).ready(() => {
     let backSong = new Audio();
