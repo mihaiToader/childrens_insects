@@ -9,6 +9,16 @@ body {
     overflow: hidden;
 }
 
+.curiozitati-btn{
+    margin-left: 10%;
+    margin-right: 5%;
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    width: 350px;
+    font-size: 26px !important;
+}
+
 .menu-container {
     width: 100%;
     height: 100vh;

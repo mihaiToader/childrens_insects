@@ -6,6 +6,8 @@ $(document).ready(() => {
     let $playAudio = $("#play-audio");
     let $ambianceAudio = $("#ambiance-audio");
     let $btnCantecele = $(".btn-cantecele");
+    let $btnCuriozitati = $(".curiozitati-btn");
+    let $curiozitatiAudio = $("#curiozitati-audio");
 
     $btnLearn.click(() => {
         window.location.href = 'static/learningPage.html';
@@ -17,7 +19,9 @@ $(document).ready(() => {
         window.location.href = 'static/cantecele.html';
     });
 
-
+    $btnCuriozitati.click(() => {
+        window.location.href = 'static/curiozitati-asemanare.html';
+    });
 
     $btnLearn.hover(
         () => {
@@ -44,6 +48,15 @@ $(document).ready(() => {
         () => {
             $canteceleAudio.trigger('pause');
             $canteceleAudio.prop("currentTime",0);
+        });
+
+    $btnCuriozitati.hover(
+        () => {
+        $curiozitatiAudio.trigger('play');
+    },
+        () => {
+        $curiozitatiAudio.trigger('pause');
+        $curiozitatiAudio.prop("currentTime",0);
         });
 
     $("#play-btn").click(() => {

@@ -1,0 +1,52 @@
+body {
+    /* Center and scale the image nicely */
+    background: url("../resources/images/background-classification.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.repeat-container {
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.repeat-image {
+    height: 50%;
+    margin: 3%;
+}
+
+.repeat-image:hover{
+    height: 90%;
+}
+
+.options-container {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-image {
+    height: 50%;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.options-image:hover {
+    height: 95%;
+}
