@@ -10,19 +10,19 @@ body {
 }
 
 .repeat-container {
-    height: 25vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
 .repeat-image {
-    height: 31%;
+    height: 70%;
     margin: 3%;
 }
 
 .repeat-image:hover{
-    height: 90%;
+    height: 100%;
 }
 
 .options-container {

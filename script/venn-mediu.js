@@ -1,50 +1,55 @@
 let storyLine = {
     sound: new Audio(),
     current: {
-        object: 'VENNMEDIU',
+        object: 'MEDIU',
         speaking: true,
     },
-    'venn-mediu': {
-        story: '../resources/sounds/birdDeosebiri.mp3',
-        identifier: 'VENNMEDIU',
-        onClick: (callback) => {$('#venn-mediu').click(callback)}
+    'mediu': {
+        story: '../resources/sounds/mediuDiagrame.mp3',
+        identifier: 'MEDIU',
+        onClick: (callback) => {$('#mediu').click(callback)}
     },
-'venn-mediu': {
-    story: '../resources/sounds/mediuDiagrame.mp3',
-        identifier: 'VENNMEDIU',
-        onClick: (callback) => {$('#venn-mediu').click(callback)}
-},
 };
 
 $(document).ready(() => {
-    storyLine.sound.src = storyLine.bird.story;
-storyLine.sound.play();
+    storyLine.sound.src = storyLine.mediu.story;
+    storyLine.sound.play();
 
-let nextSong = new Audio();
-let $nextBtn = $('.next-btn');
+    let nextSong = new Audio();
+    let $nextBtn = $('.next-btn');
 
-$nextBtn.click(() => {
-    setTimeout(() => {window.location.href = '../static/curiozitati-diagrame.html';}, 2000);
-storyLine.sound.pause();
-nextSong.src = '../resources/sounds/next.mp3';
-nextSong.play();
-});
+    $nextBtn.click(() => {
+        setTimeout(() => {window.location.href = '../static/venn-organizare.html';}, 2000);
+    storyLine.sound.pause();
+    nextSong.src = '../resources/sounds/next.mp3';
+    nextSong.play();
+    });
+    let backSong = new Audio();
+    let $backBtn = $('.back-btn');
 
-const clickOnCartoon = (cartoon) => {
-    storyLine[cartoon].onClick(() => {
-        if (storyLine.current.object !== storyLine[cartoon].identifier) {
-        storyLine.current.object = storyLine[cartoon].identifier;
-        storyLine.current.speaking = true;
-        storyLine.sound.src = storyLine[cartoon].story;
-        storyLine.sound.play();
-    } else if (storyLine.current.speaking) {
-        storyLine.current.speaking = false;
-        storyLine.sound.pause();
-    } else {
-        storyLine.current.speaking = true;
-        storyLine.sound.play();
-    }
-});
-};
-clickOnCartoon('bird');
+    $backBtn.click(() => {
+        setTimeout(() => {window.location.href = '../index.html';},2000);
+    storyLine.sound.pause();
+    backSong.src = '../resources/sounds/back.mp3';
+    backSong.play();
+    });
+
+
+    const clickOnCartoon = (cartoon) => {
+        storyLine[cartoon].onClick(() => {
+            if (storyLine.current.object !== storyLine[cartoon].identifier) {
+            storyLine.current.object = storyLine[cartoon].identifier;
+            storyLine.current.speaking = true;
+            storyLine.sound.src = storyLine[cartoon].story;
+            storyLine.sound.play();
+        } else if (storyLine.current.speaking) {
+            storyLine.current.speaking = false;
+            storyLine.sound.pause();
+        } else {
+            storyLine.current.speaking = true;
+            storyLine.sound.play();
+        }
+    });
+    };
+    clickOnCartoon('mediu');
 });

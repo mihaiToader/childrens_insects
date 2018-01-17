@@ -20,7 +20,7 @@ $(document).ready(() => {
     });
 
     $btnCuriozitati.click(() => {
-        window.location.href = 'static/curiozitati-asemanare.html';
+        window.location.href = 'static/curiozitati.html';
     });
 
     $btnLearn.hover(
