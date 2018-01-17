@@ -46,6 +46,9 @@ let storyLine = {
     },
 };
 
+let btnBackCliked = false;
+let btnBackTimeot = null;
+
 $(document).ready(() => {
     storyLine.sound.src = storyLine.bird.story;
     storyLine.sound.play();
@@ -54,9 +57,14 @@ $(document).ready(() => {
     let $backBtn = $('.back-btn');
 
     $backBtn.click(() => {
-        setTimeout(() => {window.location.href = '../index.html';}, 10000);
+        if (btnBackCliked) {
+            clearTimeout(btnBackTimeot);
+            window.location.href = '../index.html';
+        }
+        btnBackTimeot = setTimeout(() => {window.location.href = '../index.html';}, 10000);
         storyLine.sound.pause();
         backSong.src = '../resources/sounds/incheiere-poveste2.mp3';
+        btnBackCliked = true;
         backSong.play();
     });
 
