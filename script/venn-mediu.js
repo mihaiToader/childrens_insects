@@ -1,29 +1,19 @@
 let storyLine = {
     sound: new Audio(),
     current: {
-        object: 'BIRD',
+        object: 'VENNMEDIU',
         speaking: true,
     },
-    'bird': {
+    'venn-mediu': {
         story: '../resources/sounds/birdDeosebiri.mp3',
-        identifier: 'BIRD',
-        onClick: (callback) => {$('#bird').click(callback)}
+        identifier: 'VENNMEDIU',
+        onClick: (callback) => {$('#venn-mediu').click(callback)}
     },
-    'aripi': {
-        story: '../resources/sounds/aripi.mp3',
-            identifier: 'ARIPI',
-            onClick: (callback) => {$('#aripi').click(callback)}
-    },
-    'mediu': {
-        story: '../resources/sounds/mediu.mp3',
-            identifier: 'MEDIU',
-            onClick: (callback) => {$('#mediu').click(callback)}
-    },
-    'grup': {
-        story: '../resources/sounds/grup.mp3',
-            identifier: 'GRUP',
-            onClick: (callback) => {$('#grup').click(callback)}
-    },
+'venn-mediu': {
+    story: '../resources/sounds/mediuDiagrame.mp3',
+        identifier: 'VENNMEDIU',
+        onClick: (callback) => {$('#venn-mediu').click(callback)}
+},
 };
 
 $(document).ready(() => {
@@ -57,7 +47,4 @@ const clickOnCartoon = (cartoon) => {
 });
 };
 clickOnCartoon('bird');
-clickOnCartoon('aripi');
-clickOnCartoon('mediu');
-clickOnCartoon('grup');
 });

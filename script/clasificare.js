@@ -14,7 +14,7 @@ let storyLine = {
  let $nextBtn = $('.next-btn');
 
  $nextBtn.click(() => {
- setTimeout(() => {window.location.href = '../static/curiozitati-diagrame.html';}, 2000);
+ setTimeout(() => {window.location.href = '../static/venn-organizare.html';}, 2000);
  storyLine.sound.pause();
  nextSong.src = '../resources/sounds/next.mp3';
  nextSong.play();
